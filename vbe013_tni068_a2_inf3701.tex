@@ -16,40 +16,17 @@
 \pagestyle{fancyplain} % options: empty , plain , fancy
 \renewcommand{\headrulewidth}{1pt} % customise the layout...
 \renewcommand{\footrulewidth}{0pt}
-%\lhead{\fancyplain{}{\thetitle{} -- \thesubtitle{}}}\chead{}\rhead{\fancyplain{}vbe013\&tbn068}
 \lfoot{}\cfoot{Page {\thepage} of \pagecount}\rfoot{}
 
 \begin{document}
 
-%%% TITLE PAGE
+\title{Data Mining in Medical Data}
 
-\begin{titlepage}
-\begin{center}
-
-
-
-\textsc{\\[3.5cm] \LARGE Data mining in the healthcare sector }\\[1.5cm]
-
-\large{\theauthor} \\[0.5cm] 
-\large{University of Tromsø, Department of Computer Science}\\[1.1cm]
-%\textsc{\LARGE \thetitle}\\[0.5cm]
-
-%\textsc{\Large \thesubtitle}\\[1.5cm]
-
-
-
-
-
-\vfill
-{\large \today}
-
-\end{center}
-\thispagestyle{empty}
-\end{titlepage}
-
-\newpage{}
-
-
+\author{\IEEEauthorblockN{Valter Berg}
+\and
+\IEEEauthorblockN{Thomas Bye Nilsen }
+}
+\maketitle
 %%% TABLE OF CONTENTS
 
 %\tableofcontents
@@ -104,6 +81,8 @@ The issue regarding data standardization can be solved by agreeing on a standard
 Regarding the challenges with extracting information from free-text in medical data the research group Jensen, K. et al. worked on identifying cancer patient trajectories with analysing free text in electronic health records. Their goal were to identify cancer patient trajectories in need of resource demanding treatment and repeated hospital admissions. They concluded that their tool for identifying patient trajectories through free text analyses would be sufficient to use as a data-driven support tool in the complete cancer trajectory. They also claimed that use of their tool could decrease adverse events and readmissions and improve the quality of cancer care. 
 
 Regarding real-time analytics, both security and financial requirements must be retained. To lower the cost for real-time analytics without involving third-party vendors to a unnecessary degree, the institutions should provide its own infrastructure for real-time analytics. This is a reasonable approach because there are no signs for a decrease in demand for processing in this field. Building its own infrastructure involves using trained specialists in the research field in the long run. Building the infrastructure for such processing will take into account the nature and practical use of the data. By keeping the data within the institutions, there is no need to put trust into a third-party vendor.
+
+Here is a nice technique discussed.\cite{medicalmining}
 
 \section{Discussion}
 As we have seen, there are still some challenges that need to be addressed. Overcoming the challenges needs to be prioritized by governments across country borders. Despite the fact that the suggestions are theoretical, they are supported by reasoning. In the years to come, as the population and medical research grow in size, investments must be done. We have covered a subset of the challenges there is; there are more to shortly mention. One is regulatory compliance issues\cite{kek} which involves legal challenges that can surface in the process of storing and processing large amounts of data. Lack of appropriate skills can act as a barrier in implementing big data systems\cite{kek}. With change in technology, techniques and treatment standards, the personnel operating the systems must have up-to-date knowledge and skills.

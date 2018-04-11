@@ -45,6 +45,15 @@ We observe an ever-increasing quantity of data being produced in medical areas. 
 
 \section{Introduction}
 There is a vast and rapidly expanding amount of data being produced digitally. In the US healthcare system alone, in 2011, 150 exabytes of data was stored. Continuing at this rate of growth, the size of the volume will reach the zettabyte scale, and not long after that, the yottabyte scale \cite{intro}. 
+Figure 1 shows the increase of patient events data stored in electronic health records (EHR) from 1999 to 2014 at the University Hospital of North Norway(UNN). Here is revealed a rapid growth for patient event related to diseases and symptoms.    
+
+\begin{figure}[]
+\begin{center}
+\fbox{\includegraphics[width=189px]
+{patientEvents.pdf}}
+\end{center}
+\caption{Patient events in terms of symptoms and diseases, drugs, medication and surgical procedures  accumulated over time in the EHRs at UNN.\cite{freetext}}\label{fig:ackseq}
+\end{figure}
 When the physical properties of the data increases beyond a critical point, new techniques, architecture, algorithms and visualization of the data are required to use the data in a meaningful context. This has caused a rapid development in computer science research to gain insights into large collections of data, or big data, that have not been achieved earlier. This rapid development has mainly been unfolding within the disciplines like internet business and finance, while in the healthcare area, the progress has not been as widespread. However, there seems to be an increasing attention to big data in the healthcare sector. A survey is predicting that the outcome will be severely beneficial for the sector.\cite{gg}
 
 
@@ -87,23 +96,13 @@ Curse of dimensionality can be solved by decreasing the number of dimensions. Fo
 The issue regarding data standardization can be solved by agreeing on a standardized format that is traceable throughout the industry and research area. Representatives from institutions and companies must come together and agree on a set of formats compatible with existing technology and algorithms, which also retains patients’ privacy rights. The challenge of standardizing is amplified by the presence of unstructured data. A potential solution can be applied to the input and output of the data mining algorithm. At the input side, a format can be determined so that a larger percent of the input data is structured. At the output end, the data can also be formatted in a determined format adhering to some standard.
 
 Regarding the challenges with extracting information from free-text in medical data the research group Jensen, K. et al.\cite{freetext} worked on identifying cancer patient trajectories with analysing free text in electronic health records. Their goal were to identify cancer patient trajectories in need of resource demanding treatment and repeated hospital admissions. They concluded that their tool for identifying patient trajectories through free text analyses would be sufficient to use as a data-driven support tool in the complete cancer trajectory. They also claimed that use of their tool could decrease adverse events and readmissions and improve the quality of cancer care. 
-TODO: DESCRIBE FIGURE 1 HERE SOMEWHERE. 
 
-\begin{figure}[]
-\begin{center}
-\fbox{\includegraphics[width=210px]
-{patientEvents.pdf}}
-\end{center}
-\caption{Patient events in terms of symptoms and diseases (blue), drugs, medication (magenta) and surgical procedures (orange) accumulated over time in the EHRs at UNN.\cite{freetext}}\label{fig:ackseq}
-\end{figure}
 
 Regarding real-time analytics, both security and financial requirements must be retained. To lower the cost for real-time analytics without involving third-party vendors to a unnecessary degree, the institutions should provide its own infrastructure for real-time analytics. This is a reasonable approach because there are no signs for a decrease in demand for processing in this field. Building its own infrastructure involves using trained specialists in the research field in the long run. Building the infrastructure for such processing will take into account the nature and practical use of the data. By keeping the data within the institutions, there is no need to put trust into a third-party vendor.
 
-Here is a nice technique discussed.\cite{medicalmining}
-
 \section{Discussion}
 As we have seen, there are still some challenges that need to be addressed. Overcoming the challenges needs to be prioritized by governments across country borders. Despite the fact that the suggestions are theoretical, they are supported by reasoning. In the years to come, as the population and medical research grow in size, investments must be done. We have covered a subset of the challenges there is; there are more to shortly mention. One is regulatory compliance issues\cite{kek} which involves legal challenges that can surface in the process of storing and processing large amounts of data. Lack of appropriate skills can act as a barrier in implementing big data systems\cite{kek}. With change in technology, techniques and treatment standards, the personnel operating the systems must have up-to-date knowledge and skills.
-Even though there have been decades of research, there is still a risk of adverse events and mortality in cancer treatment today. With continuously assessing patient related risk factors the treatment can be optimized, adverse events avoided and number of hospital readmissions decreased. As mentioned the research  from Jensen, K. et al. adapted to this concern with assessing patient related risk factors. As their results revealed, they achieved a mechanism that can be used as a tool when conducting patient trajectories. This is a valid example on how the data stored in EHR in the healthcare sector can be utilized to improve the medical treatment structure. 
+Even though there have been decades of research, there is still a risk of adverse events and mortality in cancer treatment today. With continuously assessing patient related risk factors the treatment can be optimized, adverse events avoided and number of hospital readmissions decreased. As mentioned the research  from Jensen, K. et al.\citep{freetext} adapted to this concern with assessing patient related risk factors. As their results revealed, they achieved a mechanism that can be used as a tool when conducting patient trajectories. This is a valid example on how the data stored in EHR in the healthcare sector can be utilized to improve the medical treatment structure. 
 
  
 \section{Conclusion}

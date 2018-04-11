@@ -47,6 +47,7 @@ We observe an ever-increasing quantity of data being produced in medical areas. 
 There is a vast and rapidly expanding amount of data being produced digitally. In the US healthcare system alone, in 2011, 150 exabytes of data was stored. Continuing at this rate of growth, the size of the volume will reach the zettabyte scale, and not long after that, the yottabyte scale \cite{intro}. 
 When the physical properties of the data increases beyond a critical point, new techniques, architecture, algorithms and visualization of the data are required to use the data in a meaningful context. This has caused a rapid development in computer science research to gain insights into large collections of data, or big data, that have not been achieved earlier. This rapid development has mainly been unfolding within the disciplines like internet business and finance, while in the healthcare area, the progress has not been as widespread. However, there seems to be an increasing attention to big data in the healthcare sector. A survey is predicting that the outcome will be severely beneficial for the sector.\cite{gg}
 
+
 \subsection{Medical big data}
 Medical big data consists of large quantities of diverse medical data. The data originates from hospitals, pharmaceutical companies and academic environments. The datasets can be categorized based on their origin. Some of the categories are administrative claim records, clinical registers, electronic health records, biometric data and large clinical trials. The value of the data lies in the processing and interpretation of the datasets. The datasets in the different categories, which are likely to be heterogeneous in terms of format and completeness, can be linked together as well. It can be valuable to link heterogeneous datasets together to search for related data that is otherwise inaccessible.\cite{wp}
 \\\\
@@ -86,6 +87,15 @@ Curse of dimensionality can be solved by decreasing the number of dimensions. Fo
 The issue regarding data standardization can be solved by agreeing on a standardized format that is traceable throughout the industry and research area. Representatives from institutions and companies must come together and agree on a set of formats compatible with existing technology and algorithms, which also retains patients’ privacy rights. The challenge of standardizing is amplified by the presence of unstructured data. A potential solution can be applied to the input and output of the data mining algorithm. At the input side, a format can be determined so that a larger percent of the input data is structured. At the output end, the data can also be formatted in a determined format adhering to some standard.
 
 Regarding the challenges with extracting information from free-text in medical data the research group Jensen, K. et al.\cite{freetext} worked on identifying cancer patient trajectories with analysing free text in electronic health records. Their goal were to identify cancer patient trajectories in need of resource demanding treatment and repeated hospital admissions. They concluded that their tool for identifying patient trajectories through free text analyses would be sufficient to use as a data-driven support tool in the complete cancer trajectory. They also claimed that use of their tool could decrease adverse events and readmissions and improve the quality of cancer care. 
+TODO: DESCRIBE FIGURE 1 HERE SOMEWHERE. 
+
+\begin{figure}[]
+\begin{center}
+\fbox{\includegraphics[width=210px]
+{patientEvents.pdf}}
+\end{center}
+\caption{Patient events in terms of symptoms and diseases (blue), drugs, medication (magenta) and surgical procedures (orange) accumulated over time in the EHRs at UNN.\cite{freetext}}\label{fig:ackseq}
+\end{figure}
 
 Regarding real-time analytics, both security and financial requirements must be retained. To lower the cost for real-time analytics without involving third-party vendors to a unnecessary degree, the institutions should provide its own infrastructure for real-time analytics. This is a reasonable approach because there are no signs for a decrease in demand for processing in this field. Building its own infrastructure involves using trained specialists in the research field in the long run. Building the infrastructure for such processing will take into account the nature and practical use of the data. By keeping the data within the institutions, there is no need to put trust into a third-party vendor.
 
